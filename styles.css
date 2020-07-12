@@ -1,0 +1,56 @@
+body {
+    background-image: url(images/bg-img.png);
+    background-repeat: no-repeat;
+    padding-left: none;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 4px;
+
+ }
+
+.container-main {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.game-info{
+    margin: 30px;
+    font-size: 30px;
+}
+
+canvas{
+   position: relative;
+}
+
+.info-game{
+    width: calc(100% - 600px);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.instructions{
+    color: hsl(197, 100%, 50%);
+    
+}
+
+.gameover-section{
+    font-size: 30px;
+}
+.input-button{
+    border-radius: 10px;
+    background-color: #eafdfd;
+    border: none;
+}
+
+.information {
+    background-color: lightcyan;
+    opacity: .8;
+    background-blend-mode: overlay;
+}

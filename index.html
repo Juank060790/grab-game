@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Best Game Ever!</title>
-  </head>
-  <body>
-    <script src="game.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Best Game Ever!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-main">
+
+    <div class="info-game">
+
+      <div class="game-info">Score: <span id="score">0</span></div>
+      <div class="game-info">Time remaining: <span id="game-time">30</span></div>
+      <div class="game-info">Lives: <span id="lives">0</span></div>
+      <div class="game-info">Results: <span id="results">0</span></div>
+      <div class="gameover-section"><span id="game-over"> </span></div>
+      <input class="input-button" id="player-name" type="text">
+      <button class="btn btn-success" id="button-replay" onclick="addPlayer()">Play</button>
+      <!-- <button class="" id="button-play" onclick="resetGame()">Reset</button> -->
+      <div class="game-info">Previous Score: <span id="previousscore">0</span></div>
+      <div class="game-info">Player's Name <span id="playername">0</span></div>
+      <div class="information">
+      <h2 class="instructions">Instructions</h2>
+      <p>Help the driver to reach his destination,<br> without getting catch or crash with the traffic.<br>
+        Use the arrows to control your driver, <br>each time you drop a passanger the moving objects will increase the
+        speed.</p>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+
+  <audio  autoplay controls id="myaudio"> 
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+
+
+</body>
+
 </html>
