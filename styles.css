@@ -30,7 +30,7 @@ canvas{
 }
 
 .info-game{
-    width: calc(100% - 600px);
+    width: calc(100% - 800px);
     text-align: center;
     margin-top: 40px;
 }
