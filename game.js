@@ -41,7 +41,7 @@ let elapsedTime = 0;
 
 
 let game = {
-  startspeed: 10,
+  startspeed: 5,
   difficulty: 1,
   listeningToKeyboard: true,
   level: 1,
